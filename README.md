@@ -4,7 +4,7 @@ Takes a songlist.txt file generated in command line, and spits out a nice .csv.
 To use:
 First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
 1. Open up command prompt as adminitrator.  Open the start menu, type in "cmd", and right click on "Command Prompt" to run as adminitrator.
-2. Navigate to your \Stepmania 5\Songs\ folder. Use `  cd.. ` to go up one level and `  cd <foldername> ` to navigate into a folder
+2. Navigate to your \Stepmania 5\Songs\ folder. Use `  cd.. ` to go up one level and `  cd <foldername> ` to navigate into a folder.  To navigate to another drive, type in ` D:` (or whatever letter the drive is)
 3. Type in the following: 
 
 `  dir /s /b *.sm > songlist.txt `
