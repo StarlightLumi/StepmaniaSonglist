@@ -1,5 +1,6 @@
 # StepmaniaSonglist
 Takes a songlist.txt file generated in command line, and spits out a nice .csv.
+Issues: Some song titles come out blank.  This seems to affect most songs that use foreign text in their title.  I don't know how to fix this.
 
 To use:
 First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
@@ -14,7 +15,7 @@ First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ 
 6. Type in "songlist.txt" in the command prompt that opens.
 7. Expected runtime: 2-5 minutes depending on amount of songs.
 
-It looks terrible in Excel.  Check it in Notepad to make sure all the foreign text came through, and then bug Microsoft to fix their spreadsheet software.  
+It looks terrible in Excel.  Check it in Notepad to make sure all the foreign text came through, and then bug Microsoft to fix their spreadsheet software.
 
 1 column mode is intended for printing/PDF's.  Rename the .csv to .txt for printing.
 
