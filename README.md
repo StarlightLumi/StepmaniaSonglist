@@ -1,5 +1,5 @@
 # StepmaniaSonglist
-Takes a songlist.txt file generated in command line, and spits out a nice .csv of &lt;Artist>,&lt;Song(Packname)>
+Takes a songlist.txt file generated in command line, and spits out a nice .csv.
 
 To use:
 First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
