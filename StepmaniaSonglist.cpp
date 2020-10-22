@@ -3,9 +3,8 @@
 
 // It's essentially a fancy file reader.
 // Since .sm files use # tags, finding the info we need is easy.
-// However, the "Locale" doesnt work.
-// Sometimes UTF characters get dropped.
-//  but not always?  And usually only from titles?
+// The file doesnt show right in Excel
+//  tell microsoft to fix their shit, my program works just fine.
 
 #include <iostream>
 #include <fstream>
@@ -29,6 +28,10 @@ int main()
     csvoutput.open("songlist.csv");
 
     //get the songlist
+    cout << "Input number of columns desired (1, 2, or 3)\n";
+    string option;
+    getline(cin, option);
+    int numcolumns = stoi(option);
     cout << "Songlist file name please \n";
     char songlistfilename[MAXTOREAD];
     cin.getline(songlistfilename, MAXTOREAD);
@@ -90,10 +93,19 @@ int main()
         title = title.substr(0, len - 1);
 
         //print info from file
-        csvoutput << artist << "," << title << " (" << packname << ")\n";
+        if (numcolumns == 1) {
+            csvoutput << artist << " - " << title << " (" << packname << ")\n";
+        }
+        if (numcolumns == 2) {
+            csvoutput << artist << "," << title << " (" << packname << ")\n";
+        }
+        if (numcolumns == 3) {
+            csvoutput << artist << "," << title << "," << packname << "\n";
+        }
         chartToRead.close();
     }
     csvoutput.close();
- 
+
+
     return 0;
 }
