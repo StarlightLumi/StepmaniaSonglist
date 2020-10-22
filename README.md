@@ -17,5 +17,7 @@ First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ 
 It looks terrible in Excel.  Check it in Notepad to make sure all the foreign text came through, and then bug Microsoft to fix their spreadsheet software.  
 
 1 column mode is intended for printing/PDF's.  Rename the .csv to .txt for printing.
+
 2 column mode is intended for upload to streamersonglist.com, since it only accepts Artist and Title fields.
+
 3 column mode is fancy, but idk where you'd use that yet.  
