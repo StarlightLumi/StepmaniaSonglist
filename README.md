@@ -2,8 +2,9 @@
 Takes a songlist.txt file generated in command line, and spits out a nice .csv of &lt;Artist>,&lt;Song(Packname)>
 
 To use:
+First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
 1. Open up command prompt as adminitrator.  Open the start menu, type in "cmd", and right click on "Command Prompt" to run as adminitrator.
-2. Navigate to your \Stepmania 5\Songs\ folder.  The default is C:\Games\Stepmania 5\Songs\.
+2. Navigate to your \Stepmania 5\Songs\ folder.
 3. Type in the following: 
 
 `  dir /s /b *.sm > songlist.txt `
