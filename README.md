@@ -1,5 +1,6 @@
 # StepmaniaSonglist
 Takes a songlist.txt file generated in command line, and spits out a nice .csv.
+
 Issues: Some song titles come out blank.  This seems to affect most songs that use foreign text in their title.  I don't know how to fix this.
 
 To use:
