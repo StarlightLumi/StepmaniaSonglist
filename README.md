@@ -1,7 +1,7 @@
 # StepmaniaSonglist
 Takes a songlist.txt file generated in command line, and spits out a nice .csv.
 
-Issues: Some song titles with foreign text appear as blank in the spreadsheet.  I don't know how to fix that.
+Issues: Some songs with foreign text appear as blank in the spreadsheet.  Some how up fine.  I don't know how to fix that.
 
 To use:
 First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
