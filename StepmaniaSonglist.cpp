@@ -32,6 +32,23 @@ int main()
     string option;
     getline(cin, option);
     int numcolumns = stoi(option);
+    
+    //write first line to file
+    if (numcolumns == 1) {
+        csvoutput << "Title\n";
+    }
+    else if (numcolumns == 2) {
+        csvoutput << "Artist,Title\n";
+    }
+    else if (numcolumns == 3) {
+        csvoutput << "Artist,Title,Pack\n";
+    }
+    else { //its just gonna write a blank file, might as well exit now.
+        cout << "Really dude?\n";
+        system("PAUSE");
+        exit(EXIT_SUCCESS);
+    }
+
     cout << "Songlist file name please \n";
     char songlistfilename[MAXTOREAD];
     cin.getline(songlistfilename, MAXTOREAD);
@@ -96,10 +113,10 @@ int main()
         if (numcolumns == 1) {
             csvoutput << artist << " - " << title << " (" << packname << ")\n";
         }
-        if (numcolumns == 2) {
+        else if (numcolumns == 2) {
             csvoutput << artist << "," << title << " (" << packname << ")\n";
         }
-        if (numcolumns == 3) {
+        else if (numcolumns == 3) {
             csvoutput << artist << "," << title << "," << packname << "\n";
         }
         chartToRead.close();
