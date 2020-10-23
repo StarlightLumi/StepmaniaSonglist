@@ -1,7 +1,9 @@
 # StepmaniaSonglist
 Takes a songlist.txt file generated in command line, and spits out a nice .csv.
 
-Issues: Some artist names with foreign text appear as blank in the spreadsheet.  The vast majority show up fine.  I don't know how to fix that.
+Issues: Some artist names with foreign text appear as blank in the spreadsheet.  
+Any filename with foreign text in it crashes the program.  I could probably write an error handler, but the other problems are too compounding.
+I plan on re-writing this program in python, or another script.  Feel free to use as-is.
 
 To use:
 First, download StepmaniaSonglist.exe, and place it in your \Stepmania 5\Songs\ folder.
